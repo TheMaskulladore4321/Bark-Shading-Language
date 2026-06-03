@@ -1,0 +1,15 @@
+uniform vec2 resolution
+uniform vec2 mouse
+
+output vec4 color
+
+fragment
+{
+    color =
+        vec4(
+            mouse.x / resolution.x,
+            mouse.y / resolution.y,
+            0.0,
+            1.0
+        )
+}
